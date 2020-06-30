@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 依赖父项目-->
+	<parent>
+		<groupId>cn.loveapp.common</groupId>
+		<artifactId>common-spring-boot-parent</artifactId>
+		<version>1.11.1-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+    <!-- 如果有需要更新一下-->
+	<groupId>cn.loveapp.uac</groupId>
+	<artifactId>uac-api</artifactId>
+
+	<name>爱用-uac-api</name>
+	<description>爱用-uac rpc api接口定义模块</description>
+	<version>1.0-SNAPSHOT</version>
+	<properties>
+		<orders-api.version>1.0-SNAPSHOT</orders-api.version>
+		<orders-common.version>1.0-SNAPSHOT</orders-common.version>
+		<orders-consumer-common.version>1.1-SNAPSHOT</orders-consumer-common.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>cn.loveapp.common</groupId>
+			<artifactId>common-spring-boot-web-starter</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>aiyongbao-maven-releases</id>
+			<url>http://mavenzjk.aiyongtech.com/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>aiyongbao-maven-snapshots</id>
+			<url>http://mavenzjk.aiyongtech.com/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
